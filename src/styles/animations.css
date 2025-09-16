@@ -1,0 +1,20 @@
+/* src/styles/animations.css */
+
+.text-scroll-container {
+  overflow: hidden;
+  height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+@keyframes text-scroll {
+  0% { transform: translateY(0%); }
+  25% { transform: translateY(0%); }
+  33% { transform: translateY(-100%); }
+  58% { transform: translateY(-100%); }
+  66% { transform: translateY(-200%); }
+  91% { transform: translateY(-200%); }
+  100% { transform: translateY(0%); }
+}
+
+.text-scrolling {
+  animation: text-scroll 15s infinite ease-in-out;
+}

@@ -1,0 +1,316 @@
+{
+  "greeting": "Hello, world!",
+  "welcome": "Welcome to my application.",
+  "dashboard": {
+    "title": "Dashboard",
+    "users": "Users"
+  },
+  "footer": "All rights reserved © {{year}}",
+
+
+  "tituloUnoHeroSection": "Revolutionize your processes of",
+  "tituloDosHeroSection": "Interconnection",
+  "tituloTresHeroSection": "with our Central Locking",
+  "tituloHeroSection": "Revolutionize your interconnection processes with our Centralized Locking",
+  "subtituloHeroSection": "Checkbank® offers cutting-edge technology for the centralized processing of large-volume transactions. It facilitates the electronic transfer and clearing of funds between banks, handling intensive workloads and scalable data. Its mission-critical systems require high performance under international standards and include innovative payment solutions such as ATMs, Interbank Mobile Payments (P2P), Person-to-Merchant (P2C/C2P), eCommerce Payments, and Supplier Payments, among others.",
+  "buttonChangeLanguage":"Español",
+
+  "headerOneOne":"100% Safe",
+  "headerOneTwo":"Real-Time Reports",
+  "headerOneThree":"Multi-user" , 
+
+  "headerTwoOne":"Request a Free Demo",
+
+  "headerThreeOne":"No commitment",
+  "headerThreeTwo":"Installation in 30-60 days",
+  "headerThreeThree":"24/7 Support",
+
+  "headerFourOne":"70% Time Reduction",
+  "headerFourTwo":"99.9% Reporting Accuracy",
+
+  "sectionTwoOne------": "----------------",
+  "titleSectionTwo": "¿Why is it important to automate and centralize the operations and processes of interconnected banks?",
+  "subTitleSectionTwo": "Automatizing and centralizing the operations and processes of interconnected banks is crucial because it guarantees safe and reliable communication between them. This, in turn, facilitates various essential interbank activities such as fund transfers, compensation and liquidation. In addition, it provides a standardized framework for interbank connectivity, which is essential for regulatory compliance.",
+
+   "columOneOneSectionTwo": "Current Problems",
+
+  "columOneTwoSectionTwoTitle": "Loss of valuable time",
+  "columOneTwoSectionTwoSubtitle": "Manual processes that consume hours of specialized work daily.",
+
+  "columOneThreeSectionTwoTitle": "High risk of human error",
+  "columOneThreeSectionTwosubtitle": "Frequent errors in centralized bank closing lead to commission errors and discomfort for affiliated banks and customers.",
+
+  "columOneFourSectionTwoTitle": "Difficulty in complying with regulations",
+  "columOneFourSectionTwoSubtitle": "Complexity in generating accurate reports that comply with local and international regulations.",
+
+  "columFiveSectionTwoTitle": "Slow and inaccurate reporting",
+  "columFiveSectionTwoSubtitle": "Late generation of reports that affects strategic decision-making.",
+
+  "sectionTwoTwo-------------": "----------------",
+
+   "titleSectionTwoTwo": "Our Solution",
+   
+   "columTwoOneSectionTwoTitle": "Electronic Transaction Reconciliation System.",
+   "columTwoOneSectionTwoSubTile": "Ensures the integrity and consistency of financial data across all affiliated banks and interconnected networks.",
+   
+   "columTwoTwoSectionTwoTitle": "Reconciliation of financial transactions in real time or in batches.",
+   "columTwoTwoSectionTwoSubTile": "Ensures automatic and accurate reconciliation of transactions between interconnected banks and networks, identifying potential claims and optimizing the ability to clear funds and assets, ensuring liquidity is available when needed.",
+
+   "columTwoThreeSectionTwoTitle": "Real-time financial information",
+   "columTwoThreeSectionTwoSubTile": "It guarantees automatic and accurate reconciliation between interconnected banks. The ability to settle funds and assets ensures liquidity is available when needed.",
+   
+   "columTwoFourSectionTwoTitle": "Regulatory Compliance",
+   "columTwoFourSectionTwoSubTile": "Standardized protocols and formats, ensuring compatibility and interoperability between different banks and financial systems.",
+
+   "columTwoFiveSectionTwoTitle": "Constant verification of all transactions",
+   "columTwoFiveSectionTwoSubTile": "Maintain financial accuracy with daily validations and balances. Minimize the risk of errors or disputes, further reducing the potential costs arising from such incidents.",
+
+   "columTwoSixSectionTwoTitle": "Strengthens the stability and overall confidence of the national banking system",
+   "columTwoSixSectionTwoSubTile": "By strengthening the stability of the national banking system, an enabling environment for foreign investment is fostered, sustained economic growth is stimulated, and the protection of citizens' savings is guaranteed..",
+
+   "columTwoSevenSectionTwoTitle": "The rise of open networks",
+   "columTwoSevenSectionTwoSubTile": " Without a common infrastructure that allows for secure and efficient communication between participating institutions, regardless of their individual systems or protocols.",
+
+   "columTwoEightSectionTwoTitle": "Compatibility",
+   "columTwoEightSectionTwoSubTile": " It does not use standardized messaging protocols and formats, and does not guarantee compatibility and interoperability between participating institutions.",
+
+   "columTwoNinetSectionTwoTitle": "Innovation",
+   "columTwoNineSectionTwoSubTile": "Integration with fintech companies. Designed to adapt to the growing needs of the financial industry.",
+
+
+   "sectionTwoThree-------------": "----------------",
+
+  "sectionTwoThreeTitle": "Economic Impact",
+  
+  "sectionTwoThreeSubtitleOne": "Improves liquidity management",
+  "sectionTwoThreeSubtitleTwo": "Weekly time spent on manual processes",
+
+  "sectionTwoThreeTitletwo": "Measurable Benefits",
+  
+  "sectionTwoThreeSubtitleOneTwo": "Monthly averages LBTR",
+  "sectionTwoThreeSubtitleTwoTwo": "Reduction Operational costs",
+
+  "sectionTwoFour-------------": "----------------",
+
+  "titleSectionTwoFour": "Technology Proven in the Banking Sector",
+  "subtitleSectionTwoFour": "Our platform is installed in the country's second-largest banking network, with five (5) major interconnected banks. Its architecture supports a growing transaction volume without compromising data speed and reliability, with processing power, alerts, demanding mission-critical tasks, and robust security.",
+
+
+   "keyFeactures------":"----------------",
+   
+  "features": {
+    "title": "Main benefits",
+    "subtitle": "Discover the main benefits that make our solution unique and powerful.",
+    "feature1": {
+      "title": "💾 Native Integration with IBM i (AS/400) Systems",
+      "description": "Works directly on your existing infrastructure without data migration or changes to your current environment."
+    },
+    "feature2": {
+      "title": "📋 Confidence and stability in the financial system",
+      "description": "The main objective of the process is to ensure the integrity and consistency of financial information at the systemic level. The central bank plays a fundamental role in supervising the settlement system and ensuring financial stability. The integrity of the financial system remains intact."
+    },
+    "feature3": {
+      "title": "🛡️ Reducing operational risk",
+      "description": "The system is a critical process that ensures the accuracy of all transactions and balances. In the event of discrepancies, a process is initiated to investigate and resolve them."
+    },
+    "feature4": {
+      "title": "👥 Protection of assets and data",
+      "description": "Cybersecurity is a top priority to protect the information and funds handled. All transactional and closing data is also backed up to ensure recovery in the event of a failure."
+    },
+    "feature5": {
+      "title": "📊 Transaction efficiency",
+      "description": "The netting process nets transactions between banks to calculate net balances payable or receivable, reducing the number of individual transfers. Real-time settlement (LBTR) system settle transactions instantly."
+    },
+    "feature6": {
+      "title": "🔄 Transparency and reliability",
+      "description": "Both the centralized system and each bank generate closing reports summarizing the day's activity, final balances, and adjustments made. These reports are crucial for accounting and auditing purposes."
+    }
+  },
+
+  "Cutting-edgeTechnology------":"----------------",
+
+  "Cutting-edgetechnologyTitle":"Cutting-edge technology",
+
+  "Cutting-edgetechnologyTitleOne":"Real-Time Processing",
+  "Cutting-edgetechnologySubTitleOne":"Instant data updates and report generation without delays",
+
+
+  "Cutting-edgetechnologyTitleTwo":"Automatic Backup",
+  "Cutting-edgetechnologySubTitleTwo":"Continuous backup of critical information with instant recovery",
+
+  "Cutting-edgetechnologyTitleThree":"Enterprise Scalability",
+  "Cutting-edgetechnologySubTitleThree":"Designed to grow with your institution without transaction limits",
+
+  "Cutting-edgetechnologyTitleFour":"Integration APIs",
+  "Cutting-edgetechnologySubTitleFour":"Connectivity with third-party systems and external platforms",
+
+  "Cutting-edgetechnologyTitleFive":"Seamless Deployment",
+  "Cutting-edgetechnologySubTitleFive":"Our dedicated team ensures a smooth transition without impacting your daily operations. Complete implementation in 30-60 days.",
+
+  "AnalyticsAvanced------":"----------------",
+
+  "AnalyticsAvancedTitle": "Advanced Analytics",
+
+  "AnalyticsAvancedTitleOne":"Live Metrics",
+  "AnalyticsAvancedSubTitleOne":"Continuous monitoring of volumes, processing times and error rates",
+
+  "AnalyticsAvancedTitleTwo":"Smart Alerts",
+  "AnalyticsAvancedSubTitleTwo":"Automatic notifications in case of discrepancies or situations that require attention",
+
+  "AnalyticsAvancedTitleThree":"Custom Reports",
+  "AnalyticsAvancedSubTitleThree":"Generation of specific reports according to the needs of each department",
+
+
+  "Testimonial------":"----------------",
+  
+  "TestimonialTitleOne":"Since we implemented this central locking system, we managed to reduce by a",
+  "TestimonialTitleTwo":"70% of the time",
+   "TestimonialTitleThree":"intended for these processes and we improve the",
+   "TestimonialTitleFour":"accuracy of our regulatory reports",
+
+   "TestimonialSubTitleFive":"Operations Manager",
+    "TestimonialSubTitleSix":"Banco Regional S.A.",
+
+    "Result-----":"----------------",
+
+    "ResultTitle":"Results Obtained:",
+    "ResultOne":"Time reduction",
+    "ResultTwo":"Reporting accuracy",
+    "ResultThree":"Annual savings",
+    "ResultFour":"Availability",
+
+    "ImplementationTitle":"Successful Implementation",
+    "ImplementationOne":"Success Story",
+    "ImplementationTwo":"Banco Regional S.A.",
+    "ImplementationThree":"150+ employees",
+    "ImplementationFour":"50,000+ daily transactions",
+    "ImplementationFive":"Implementation: 45 days",
+    "ImplementationSix":"ROI: 6 months",
+
+   "SuccessStories":"----------------", 
+   
+   "SuccessStoriesTitleOne":"Reduction of manual errors",
+   "SuccessStoriesTitleOneTwo":"Banco Internacional Norte",
+
+   "SuccessStoriesTitleTwoOne":"Implementation time",
+   "SuccessStoriesTitleTwoOneTwo":"Regional Central Bank",
+
+   "SuccessStoriesTitleThreeOne":"Average annual savings",
+   "SuccessStoriesTitleThreeOneTwo":"South Business Bank",
+   "Success30":"days",
+
+   "contact":"----------------",
+   "contactTitle": "Find out how we can help you",
+   "contactSubTitle": "Request a personalized demo and discover how it can transform your bank's operations.",
+
+   "contactTitleOne":"Personalized Demo",
+   "contactSubTitleOne":"Presentation tailored to the specific needs of your banking institution",
+
+   "contactTitleTwo":"Free Analysis",
+   "contactSubTitleTwo":"Free assessment of your current processes and opportunities for improvement",
+
+   "contactTitleThree":"Technical Proposal",
+   "contactSubTitleThree":"Detailed implementation plan with schedule and technical specifications",
+
+
+
+   "choose":"----------------",
+    "chooseTitle"        : "Why choose us",
+    "chooseSubTitleOne"  : "+25 years of experience in banking systems",
+    "chooseSubTitleTwo"  : "24/7 specialized technical support",
+    "chooseSubTitleThree": "Rapid implementation (30-60 days)",
+    "chooseSubTitleFour" : "Guaranteed compliance with regulations",
+    "chooseSubTitleFive" : "Proven ROI in less than 6 months",
+    "chooseSubTitleSix"  : "Request Information",
+    "chooseSubTitleSeven": "Complete the form and we will contact you immediately.",
+
+    "contactForm":"----------------",
+    "contactFormL1":"Have questions? We're here to help!",
+    "contactFormL2":"Contact us directly via WhatsApp or email. We will respond as soon as possible!",
+   
+    "contactFormL4":"Our WhatsApp",
+    "contactFormL5":"Spain",
+    "contactFormL6":" Email",
+    "contactFormL7":" By submitting this form, you agree to be contacted by our sales team. Your data is protected according to our privacy policy.",
+    
+  "faqSection":"----------------",
+     "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "We resolve the most common doubts about our Centralized Banking Closing System",
+
+    "question1": "Does the system require data migration?",
+    "answer1": "No, it is designed to operate within your existing AS/400 environment without affecting your current infrastructure. The system natively integrates with your current databases and applications, allowing for an implementation that does not interrupt your daily operations.",
+
+    "question2": "Is it compatible with any version of IBM i?",
+    "answer2": "Yes, it works with the most commonly used versions, starting from version 7.2 onwards. Our system has been tested and certified to work with all current IBM i versions, including the latest updates and security patches.",
+
+    "question3": "Do you offer technical support after implementation?",
+    "answer3": "Of course, we have a specialized team available 24/7 to resolve any incidents. Our support includes proactive monitoring, automatic updates, preventive maintenance, and direct access to engineers specialized in banking systems.",
+
+    "question4": "How long does the implementation take?",
+    "answer4": "It depends on the size of the bank, but on average between 30 and 60 days. This time includes: initial analysis, custom configuration, configuration migration, exhaustive testing, staff training, and production deployment. We guarantee a seamless transition.",
+
+    "question5": "Can the Central Locking be processed more than once a day?",
+    "answer5": "If the system is capable of receiving any number of transactions and applying the reconciliation and settlement process in the central bank at any time of day and as many times as the user requires.",
+
+    "question6": "Are there control reports that the user can customize according to their operational requirements?",
+    "answer6": "The system includes a series of predefined reports for general accounting and statistics. However, since each organization has a unique operational process, users have the option to request additional reports and queries to be included in the system, based on their specific operational needs.",
+
+    "question7": "Are there repositories of the operations processed in previous days?",
+    "answer7": "The system allows you to view detailed transaction history up to six months old."
+
+
+
+	},
+
+   "Footer":"----------------",
+   "FooterL1":"Centralized Bank Closing",
+   "FooterL2":"Leaders in automation solutions for centralized banking systems. Specializing in native integration with IBM Power I for the financial sector.",
+   "FooterL3":"20+ years of experience",
+   "FooterL4":"7+ banks implemented",
+   "FooterL5":"IBM Power I Certification",
+   "FooterL6":"ISO 20022 Certification",
+   "FooterL7":"24/7 Support",
+   "FooterL8":"Social networks",
+   "FooterL9":"Navigationn",
+   "FooterL10":"Start",
+   "FooterL11":"Services",
+   "FooterL12":"characteristics",
+   "FooterL13":"success stories",
+   "FooterL14":"Resources",
+   "FooterL15":"Technical Documentation",
+   "FooterL16":"Success Stories",
+   "FooterL17":"Webinars",
+   "FooterL18":"Contact Information",
+   "FooterL19":"Caracas, Venezuela.",
+   "FooterL20":"Phone",
+   "FooterL21":"Contact",
+   "FooterL22":"My Whatsapp",
+   "FooterL23":"Main Office",
+
+   "FooterL24":"Opening Hours",
+   "FooterL25":"Monday - Friday",
+   "FooterL26":"Technical Support:",
+   "FooterL27":"Emergencies:",
+
+   "FooterL28":"Copyright © 2025 Consulbank | All Rights Reserved",
+   "FooterL29":"Terms of Service",
+   "FooterL30":"Privacy Policy",
+   "FooterL31": "This website uses cookies to improve your experience. By continuing to browse, you agree to the use of cookies in accordance with our privacy policy.",
+
+   "FootereSpain":"----------------",
+   "FooterL32":"Spain Office", 
+   "FooterL33":"Pozuelo de Alarcón, 28224, Madrid",
+
+   "Certifications":"----------------",
+   "certification1":"Certifications and Compliance:",
+   "certification2":"Information security:",
+   "certification3":"Safety standards:",
+   "certification4":"Data protection",
+   "certification5":"Regulatory compliance"
+
+
+
+
+  
+}
