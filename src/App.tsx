@@ -5,6 +5,7 @@ import AboutSectionV2 from './components/AbouSection';
 import Conciliacion from './components/conciliacion';
 import Mision from './components/mision';
 import CheckBank from './components/checkbank';
+import Vision from './components/vision';
 import BlogPage from './components/BlogPage';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -31,6 +32,7 @@ const MainPage = () => (
     <Conciliacion />
     <Mision />
     <CheckBank />
+    <Vision />
     <ContactForm />
     <Footer />
   </>
