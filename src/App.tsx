@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
-import BankPromoSection from './components/cierrecentralizado';
-import AboutSectionV2 from './components/AbouSection';
-import Conciliacion from './components/conciliacion';
-import Mision from './components/mision';
-import CheckBank from './components/checkbank';
-import Vision from './components/vision';
+
 import BlogPage from './components/BlogPage';
 import ContactForm from './components/ContactForm';
+import Servicios from './components/Servicios';
+
+import CaracterisiticasApp from './components/CaracteristicasApp';
+import Nosotros from './components/Nosotros';
+import Soluciones from './components/Soluciones';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -27,12 +27,11 @@ function App() {
 const MainPage = () => (
   <>
     <HeroSection />
-    <BankPromoSection />
-    <AboutSectionV2 />
-    <Conciliacion />
-    <Mision />
-    <CheckBank />
-    <Vision />
+    <Servicios />
+    <Soluciones />
+    <Nosotros />
+    <CaracterisiticasApp />
+   
     <ContactForm />
     <Footer />
   </>

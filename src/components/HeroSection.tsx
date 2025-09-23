@@ -47,16 +47,16 @@ const HeroSection = () => {
                 />
               </a>
             </div>
-            
+
             {/* Menú de navegación */}
-            
-      <div className="hidden md:flex items-center space-x-8">
-        {/*<a href="#inicio" className="text-gray-800 hover:text-gray-900 transition-colors">Nosotros</a> */}
-        {/*<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Servicios</a> */}
-        <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors">Ticket Soporte</a>
-        <Link to="/blog" className="text-gray-800 hover:text-gray-900 transition-colors">Blog</Link>
-      </div>
-      
+
+            <div className="hidden md:flex items-center space-x-8">
+              {/*<a href="#inicio" className="text-gray-800 hover:text-gray-900 transition-colors">Nosotros</a> */}
+              {/*<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Servicios</a> */}
+              <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors">Ticket Soporte</a>
+              <Link to="/blog" className="text-gray-800 hover:text-gray-900 transition-colors">Blog</Link>
+            </div>
+
 
             {/* Redes sociales */}
             <div className="flex items-center space-x-3">
@@ -141,10 +141,10 @@ const HeroSection = () => {
       {/* Hero Content */}
 
       {/*<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 m-12"> */}
-        {/*  <div className="grid lg:grid-cols-2 gap-12 items-center"> */}
-          {/* Left Column - Content */}
+      {/*  <div className="grid lg:grid-cols-2 gap-12 items-center"> */}
+      {/* Left Column - Content */}
 
-          {/*
+      {/*
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight space-y-4">
@@ -201,8 +201,8 @@ const HeroSection = () => {
             </div>
           </div>
           */}
- 
- <video 
+
+      <video
         autoPlay
         loop
         muted
@@ -212,8 +212,8 @@ const HeroSection = () => {
         <source src="/video/video1.mp4" type="video/mp4" />
       </video>
 
-          {/* Right Column - Dashboard Mockup */}
-          {/*
+      {/* Right Column - Dashboard Mockup */}
+      {/*
           <div className="relative">
             <div className="flex justify-end mb-6">
               
@@ -231,15 +231,15 @@ const HeroSection = () => {
             
           </div>
           */}
-        {/*</div> */}  
+      {/*</div> */}
       {/*</div>*/}
 
 
-       
-     
-  
-  
-    
+
+
+
+
+
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

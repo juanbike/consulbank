@@ -103,19 +103,19 @@
   "keyFeactures------":"----------------",
 
   "features": {
-    "title": "Beneficios principales",
-    "subtitle": "Descubra las principales beneficios que hacen que nuestra solución sea única y potente.",
+    "title": "Tus Retos, Nuestra Razón de Ser",
+    "subtitle": "Nos especializamos en entender tus necesidades para diseñar las respuestas más inteligentes y efectivas en el sector Financiero",
     "feature1": {
-      "title": "💾 Integración nativa con sistemas IBM Power I",
-      "description": "Funciona directamente en su infraestructura existente sin migración de datos ni cambios en su entorno actual."
+      "title": "💾 Quienes somos",
+      "description": "Somos una empresa venezolana con más de 25 años de experiencia en el mercado financiero. Estamos dedicados a ofrecer productos de calidad y a integrar soluciones con una amplia cobertura de los diferentes CORES bancarios como IBS, Paradise y SIAF. Además, tenemos amplia experiencia en la conectividad con diversos SUICHES transaccionales, incluyendo Postilion, Cactus y Cats. Como fábrica de software, nos especializamos en la integración, diseño y desarrollo de sistemas a la medida.  Nuestro equipo de expertos tiene experiencia certificada en el manejo de plataformas como IBM Power, web e infraestructuras en la nube."
     },
     "feature2": {
-      "title": "📋 Confianza y estabilidad en el sistema financiero",
-      "description": "El proceso tiene como objetivo principal garantizar la integridad y coherencia de la información financiera a nivel sistémico. El banco central desempeña un rol fundamental en la supervisión del sistema de liquidación y en la garantía de la estabilidad financiera. La integridad del sistema financiero se mantiene intacta."
+      "title": "📋 Misión",
+      "description": "Nuestra misión es ofrecer soluciones de calidad a nuestros clientes a través de la integración, el diseño y el desarrollo de sistemas a la medida.Nos esforzamos por empoderar a nuestros clientes con productos innovadores y una amplia conectividad con los principales CORES y SUICHES bancarios del mercado , asegurando que sus proyectos sean ejecutados con la experiencia certificada de nuestro equipo."
     },
     "feature3": {
-      "title": "🛡️ Reducción del riesgo operacional",
-      "description": "El sistema es un proceso crítico que asegura la cuadratura de todas las transacciones y saldos. En caso de discrepancias, se inicia un proceso para investigarlas y resolverlas."
+      "title": "🛡️ Visión",
+      "description": "Nuestra visión es ser líderes en el mercado financiero, impulsando la transformación continua a través de la innovación en nuestros productos y servicios. Aspiramos a ser el socio estratégico preferido de las empresas, integrando sus operaciones con diversas plataformas y tecnologías para ofrecer soluciones de alto valor, construidas con nuestra experiencia y conocimientos especializados en software e infraestructura"
     },
     "feature4": {
       "title": "👥 Protección de activos y datos",
