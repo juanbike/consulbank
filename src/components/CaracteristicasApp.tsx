@@ -1,70 +1,60 @@
 import { Feature } from '../types';
 import { 
-  FaRobot, 
-  FaCloud, 
-  FaMobileAlt, 
-  FaLock, 
-  FaChartBar, 
-  FaUsers,
-  FaClock,
-  FaShieldAlt
+  FaChartLine, 
+  FaShieldAlt, 
+  FaLightbulb, 
+  FaUserTie, 
+  FaChartBar
 } from 'react-icons/fa';
 
 const CaracterisiticasApp = () => {
   const features: (Feature & { color: string })[] = [
     {
       id: 1,
-      title: 'Automatización',
-      description: 'Procesos automatizados que reducen tiempos y errores humanos',
-      icon: 'FaRobot',
+      title: 'Mayor eficiencia y control',
+      description: 'Los clientes pueden lograr una eficiencia operativa significativa y tener un control total sobre sus finanzas, lo que les permite tomar decisiones más inteligentes.',
+      icon: 'FaChartLine',
       color: 'text-blue-600'
     },
     {
       id: 2,
-      title: 'Cloud Computing',
-      description: 'Acceso seguro desde cualquier lugar y en cualquier momento',
-      icon: 'FaCloud',
+      title: 'Tranquilidad y seguridad',
+      description: 'Nuestros clientes pueden sentirse seguros sabiendo que la plataforma está construida con la misma infraestructura segura que utilizan los grandes bancos, con encriptación de grado militar y certificaciones relevantes.',
+      icon: 'FaShieldAlt',
       color: 'text-blue-600'
     },
     {
       id: 3,
-      title: 'Móvil First',
-      description: 'Diseño optimizado para dispositivos móviles y tablets',
-      icon: 'FaMobileAlt',
+      title: 'Enfoque estratégico',
+      description: 'La automatización libera al equipo financiero de tareas repetitivas y les permite enfocarse en el análisis estratégico para el crecimiento del negocio',
+      icon: 'FaLightbulb',
       color: 'text-blue-600'
     },
     {
       id: 4,
-      title: 'Seguridad',
-      description: 'Encriptación de nivel bancario y protección de datos',
-      icon: 'FaLock',
+      title: 'Asesoramiento experto',
+      description: 'Los clientes reciben un "Diagnóstico de Madurez Financiera Digital" que les ofrece recomendaciones estratégicas para optimizar aún más sus procesos financieros.',
+      icon: 'FaUserTie',
       color: 'text-blue-600'
     },
     {
       id: 5,
-      title: 'Reportes',
-      description: 'Reportes detallados y análisis en tiempo real',
+      title: 'Inversión inteligente',
+      description: 'El valor percibido de la solución de Consulbank es significativamente mayor que su costo, lo que hace que la compra se perciba como una inversión excepcional con un retorno de inversión rápido y claro.',
       icon: 'FaChartBar',
       color: 'text-green-600'
-    },
-    {
-      id: 6,
-      title: 'Soporte 24/7',
-      description: 'Asistencia técnica especializada disponible siempre',
-      icon: 'FaUsers',
-      color: 'text-blue-600'
     }
+    
   ];
 
   const getIcon = (iconName: string, color: string) => {
     switch (iconName) {
-      case 'FaRobot': return <FaRobot className={`text-3xl ${color}`} />;
-      case 'FaCloud': return <FaCloud className={`text-3xl ${color}`} />;
-      case 'FaMobileAlt': return <FaMobileAlt className={`text-3xl ${color}`} />;
-      case 'FaLock': return <FaLock className={`text-3xl ${color}`} />;
+      case 'FaChartLine': return <FaChartLine className={`text-3xl ${color}`} />;
+      case 'FaShieldAlt': return <FaShieldAlt className={`text-3xl ${color}`} />;
+      case 'FaLightbulb': return <FaLightbulb className={`text-3xl ${color}`} />;
+      case 'FaUserTie': return <FaUserTie className={`text-3xl ${color}`} />;
       case 'FaChartBar': return <FaChartBar className={`text-3xl ${color}`} />;
-      case 'FaUsers': return <FaUsers className={`text-3xl ${color}`} />;
-      default: return <FaRobot className={`text-3xl ${color}`} />;
+      default: return <FaChartLine className={`text-3xl ${color}`} />;
     }
   };
 
@@ -72,11 +62,11 @@ const CaracterisiticasApp = () => {
     <section id="caracteristicas" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Características Principales
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 transition-transform duration-300 ease-in-out hover:scale-105">
+            La Tranquilidad de un Banco, la Agilidad de una Fintech
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Todo lo que necesitas para una gestión financiera eficiente
+            Descubre cómo la Solución de Consulbank Aumenta la Rentabilidad de tu Empresa.
           </p>
         </div>
 
@@ -84,7 +74,7 @@ const CaracterisiticasApp = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.id}
-              className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group"
+              className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group transform hover:scale-105"
             >
               <div className="mb-4">
                 {getIcon(feature.icon, feature.color)}
@@ -101,34 +91,7 @@ const CaracterisiticasApp = () => {
           ))}
         </div>
 
-        {/* Performance Metrics */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">
-                <FaClock className="text-2xl text-green-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">85%</h3>
-              <p className="text-gray-600">Reducción en tiempo de procesamiento</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4">
-                <FaShieldAlt className="text-2xl text-blue-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">99.8%</h3>
-              <p className="text-gray-600">Precisión en conciliación</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">
-                <FaChartBar className="text-2xl text-green-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">24/7</h3>
-              <p className="text-gray-600">Disponibilidad del sistema</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

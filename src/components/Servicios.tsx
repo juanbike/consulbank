@@ -1,27 +1,41 @@
 import { Service } from '../types';
-import { FaChartLine, FaSyncAlt, FaShieldAlt, FaArrowRight } from 'react-icons/fa';
+import { FaChartLine, FaSyncAlt, FaShieldAlt, FaArrowRight, FaRepublican, FaRecycle } from 'react-icons/fa';
 
 const Servicios = () => {
   const services: Service[] = [
     {
       id: 1,
       title: 'Cierre Centralizado',
-      description: 'Automatización y control total de tus procesos contables con tecnología de punta.',
+      description: 'Nuestra plataforma centraliza todas las operaciones financieras en un solo sistema, automatizando cierres contables y generando reportes precisos en tiempo real. Reduce tiempos de proceso, elimina errores y garantiza cumplimiento normativo con la seguridad bancaria de ConsulBank. La solución definitiva para empresas que buscan eficiencia y control financiero integral.',
       icon: 'FaChartLine',
-      link: '#cierre-centralizado'
+      link: 'https://cierrecentralizado.consulbank.com.ve/'
     },
     {
       id: 2,
       title: 'Conciliación Bancaria',
-      description: 'Precisión y eficiencia en tus operaciones con algoritmos inteligentes.',
+      description: 'El sistema de Conciliación Bancaria de ConsulBank automatiza la comparación de transacciones internas y extractos bancarios en tiempo real. Utiliza algoritmos inteligentes para identificar discrepancias, resolver inconsistencias y generar reportes precisos (99.8%). Procesa miles de transacciones por minuto, reduciendo el tiempo de conciliación en un 85% y minimizando errores humanos. Su interfaz intuitiva permite el seguimiento completo, garantizando cumplimiento normativo. Se integra con los sistemas de ConsulBank para una conciliación ágil y segura.',
       icon: 'FaSyncAlt',
-      link: '#conciliacion-bancaria'
+      link: 'https://conciliacion.consulbank.com.ve/'
     },
     {
       id: 3,
-      title: 'Seguridad Bancaria',
-      description: 'Protección de nivel bancario para todas tus transacciones y datos.',
+      title: 'Fábrica de Software',
+      description: 'Creamos soluciones innovadoras para el sector financiero, los integramos a sistemas existentes, efectuamos desarrollos a la medida. Contamos un equipo especializados en Proyecto, desarrollo y calidad (QA).',
       icon: 'FaShieldAlt',
+      link: '#seguridad-bancaria'
+    },
+    {
+      id: 4,
+      title: 'Modernización de Aplicaciones RPG',
+      description: 'La modernización no se trata solo de actualizar el código, sino de transformar estos valiosos activos empresariales para que sean ágiles, escalables y accesibles. Los enfoques pueden variar, desde la refactorización y la reestructuración del código existente, hasta la re-escritura completa a lenguajes modernos o la encapsulación de la lógica RPG mediante servicios web y APIs. Este proceso permite revitalizar las aplicaciones, dotándolas de interfaces gráficas intuitivas, móviles y web, y facilitando su integración con otros sistemas y plataformas en la nube.',
+      icon: 'FaRepublican',
+      link: '#seguridad-bancaria'
+    },
+    {
+      id: 5,
+      title: 'Suite Checkbank',
+      description: 'Nuestro innovador Link de Pago y Botón de Pago convierten cada compra en una experiencia de un solo clic, eliminando fricciones y elevando la satisfacción de tus clientes. Amplía tu alcance con nuestro POS Virtual, ideal para el mundo digital, y toma el mando con nuestro intuitivo Panel Administrativo, tu centro de mando para una gestión superior. Con Checkbank, experimentarás el control total sobre tus redes y transacciones. Nuestra plataforma robusta y escalable te ofrece un seguimiento preciso y una gestión centralizada, dándote la tranquilidad que mereces.',
+      icon: 'FaRecycle',
       link: '#seguridad-bancaria'
     }
   ];
@@ -31,6 +45,8 @@ const Servicios = () => {
       case 'FaChartLine': return <FaChartLine className="text-4xl" />;
       case 'FaSyncAlt': return <FaSyncAlt className="text-4xl" />;
       case 'FaShieldAlt': return <FaShieldAlt className="text-4xl" />;
+      case 'FaRepublican': return <FaRepublican className="text-4xl" />;
+      case 'FaRecycle': return <FaRecycle className="text-4xl" />;
       default: return <FaChartLine className="text-4xl" />;
     }
   };
@@ -78,55 +94,7 @@ const Servicios = () => {
         </div>
 
         {/* Additional Services Grid */}
-        <div className="mt-16 grid md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-r from-primary-600 to-purple-700 rounded-2xl p-8 text-white">
-            <div className="flex items-center mb-4">
-              <FaChartLine className="text-3xl mr-4" />
-              <h3 className="text-2xl font-bold">Integración Total</h3>
-            </div>
-            <p className="text-lg opacity-90 mb-6">
-              Conectamos con los principales sistemas bancarios y plataformas transaccionales del mercado.
-            </p>
-            <ul className="space-y-2">
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-secondary-400 rounded-full mr-3"></span>
-                IBS, Paradise y SIAF
-              </li>
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-secondary-400 rounded-full mr-3"></span>
-                Postilion, Cactus y Cats
-              </li>
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-secondary-400 rounded-full mr-3"></span>
-                WhatsApp Business, Telegram
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-gradient-to-r from-secondary-600 to-red-700 rounded-2xl p-8 text-white">
-            <div className="flex items-center mb-4">
-              <FaShieldAlt className="text-3xl mr-4" />
-              <h3 className="text-2xl font-bold">Tecnología Avanzada</h3>
-            </div>
-            <p className="text-lg opacity-90 mb-6">
-              Plataformas modernas con infraestructura en la nube y soporte 24/7.
-            </p>
-            <ul className="space-y-2">
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                IBM Power y Cloud Computing
-              </li>
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Certificaciones de seguridad
-              </li>
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                Soporte técnico especializado
-              </li>
-            </ul>
-          </div>
-        </div>
+       
       </div>
     </section>
   );

@@ -18,3 +18,9 @@
 .text-scrolling {
   animation: text-scroll 15s infinite ease-in-out;
 }
+
+.card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }

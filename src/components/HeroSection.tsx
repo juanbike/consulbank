@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, BarChart3, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { FaEnvelope } from "react-icons/fa";
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation(); // Initialize translation hook
@@ -29,115 +30,128 @@ const HeroSection = () => {
         ></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            {/* Logo - Ahora es un enlace */}
-            <div className="flex items-center space-x-2">
-              <a
-                href="https://www.consulbank.com.ve"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/logooficial.webp"
-                  alt="Consulbank - Inicio"
-                  className="h-12 w-auto md:block"
-                />
-              </a>
+      {/* Header */}
+      <header className="absolute top-0 left-0 right-0 z-50">
+        {/* Top bar for contact info */}
+        <div className="bg-gray-100 text-gray-700 py-1">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start items-center">
+                <div className="flex items-center space-x-2 text-sm">
+                    <FaEnvelope />
+                    <a href="mailto:info@consulbank.com.ve" className="hover:text-blue-600">info@consulbank.com.ve</a>
+                </div>
             </div>
+        </div>
 
-            {/* Menú de navegación */}
+        {/* Main Navigation */}
+        <nav className="bg-white border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center py-4">
+              {/* Logo - Ahora es un enlace */}
+              <div className="flex items-center space-x-2">
+                <a
+                  href="https://www.consulbank.com.ve"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/images/logooficial.webp"
+                    alt="Consulbank - Inicio"
+                    className="h-12 w-auto md:block"
+                  />
+                </a>
+              </div>
 
-            <div className="hidden md:flex items-center space-x-8">
-              {/*<a href="#inicio" className="text-gray-800 hover:text-gray-900 transition-colors">Nosotros</a> */}
-              {/*<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Servicios</a> */}
-              <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors">Ticket Soporte</a>
-              <Link to="/blog" className="text-gray-800 hover:text-gray-900 transition-colors">Blog</Link>
-            </div>
+              {/* Menú de navegación */}
+
+              <div className="hidden md:flex items-center space-x-8">
+                {/*<a href="#inicio" className="text-gray-800 hover:text-gray-900 transition-colors">Nosotros</a> */}
+                {/*<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Servicios</a> */}
+                <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors">Ticket Soporte</a>
+                <Link to="/blog" className="text-gray-800 hover:text-gray-900 transition-colors">Blog</Link>
+              </div>
 
 
-            {/* Redes sociales */}
-            <div className="flex items-center space-x-3">
-              {/* Twitter/X - Ocultar en móvil */}
-              <a
-                href="https://twitter.com/consulbank"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
-                aria-label="Twitter"
-              >
-                <img
-                  src="/images/x.svg"
-                  alt="Twitter"
-                  className="h-4 w-4 m-3"
-                />
-              </a>
+              {/* Redes sociales */}
+              <div className="flex items-center space-x-3">
+                {/* Twitter/X - Ocultar en móvil */}
+                <a
+                  href="https://twitter.com/consulbank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
+                  aria-label="Twitter"
+                >
+                  <img
+                    src="/images/x.svg"
+                    alt="Twitter"
+                    className="h-4 w-4 m-3"
+                  />
+                </a>
 
-              {/* LinkedIn - Ocultar en móvil */}
-              <a
-                href="https://linkedin.com/company/consulbank"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
-                aria-label="LinkedIn"
-              >
-                <img
-                  src="/images/linkedin.svg"
-                  alt="LinkedIn"
-                  className="h-4 w-4 m-3"
-                />
-              </a>
+                {/* LinkedIn - Ocultar en móvil */}
+                <a
+                  href="https://linkedin.com/company/consulbank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
+                  aria-label="LinkedIn"
+                >
+                  <img
+                    src="/images/linkedin.svg"
+                    alt="LinkedIn"
+                    className="h-4 w-4 m-3"
+                  />
+                </a>
 
-              {/* Facebook - Ocultar en móvil */}
-              <a
-                href="https://facebook.com/consulbank"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
-                aria-label="Facebook"
-              >
-                <img
-                  src="/images/facebook.svg"
-                  alt="Facebook"
-                  className="h-4 w-4 m-3"
-                />
-              </a>
+                {/* Facebook - Ocultar en móvil */}
+                <a
+                  href="https://facebook.com/consulbank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
+                  aria-label="Facebook"
+                >
+                  <img
+                    src="/images/facebook.svg"
+                    alt="Facebook"
+                    className="h-4 w-4 m-3"
+                  />
+                </a>
 
-              {/* Instagram - Visible siempre */}
-              <a
-                href="https://instagram.com/consulbank"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
-                aria-label="Instagram"
-              >
-                <img
-                  src="/images/instagram.svg"
-                  alt="Instagram"
-                  className="h-4 w-4"
-                />
-              </a>
+                {/* Instagram - Visible siempre */}
+                <a
+                  href="https://instagram.com/consulbank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  aria-label="Instagram"
+                >
+                  <img
+                    src="/images/instagram.svg"
+                    alt="Instagram"
+                    className="h-4 w-4"
+                  />
+                </a>
 
-              {/* WhatsApp - Visible siempre */}
-              <a
-                href="https://wa.me/13054001178"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
-                aria-label="WhatsApp"
-              >
-                <img
-                  src="/images/whatsapp.svg"
-                  alt="WhatsApp"
-                  className="h-4 w-4"
-                />
-              </a>
+                {/* WhatsApp - Visible siempre */}
+                <a
+                  href="https://wa.me/13054001178"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  aria-label="WhatsApp"
+                >
+                  <img
+                    src="/images/whatsapp.svg"
+                    alt="WhatsApp"
+                    className="h-4 w-4"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
       {/* Hero Content */}
 
       {/*<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 m-12"> */}

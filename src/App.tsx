@@ -7,9 +7,13 @@ import Servicios from './components/Servicios';
 
 import CaracterisiticasApp from './components/CaracteristicasApp';
 import Nosotros from './components/Nosotros';
-import Soluciones from './components/Soluciones';
+import PorqueConsulbank from './components/PorqueConsulbank';
+import Testimonios from './components/testimonio';
+import Soluciones1 from './components/soluciones1';
+import  SingleCardCarousel  from './components/carousel';
 import Footer from './components/Footer';
 import './App.css';
+
 
 function App() {
   return (
@@ -27,10 +31,14 @@ function App() {
 const MainPage = () => (
   <>
     <HeroSection />
-    <Servicios />
-    <Soluciones />
+    <Soluciones1 />
     <Nosotros />
+    <PorqueConsulbank/>
     <CaracterisiticasApp />
+    <Servicios />
+    <Testimonios />   
+    <SingleCardCarousel />
+    
    
     <ContactForm />
     <Footer />

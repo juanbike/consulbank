@@ -130,11 +130,14 @@ const Footer = () => {
               <a href="#caracteristicas" className="block text-gray-300 hover:text-white transition-colors">
                  {t('FooterL12')}
               </a>
+              {/* Casos de Exito
               <a href="#exito" className="block text-gray-300 hover:text-white transition-colors">
                 {t('FooterL13')}
               </a>
+              */}
             </nav>
 
+            {/* Legal Links 
             <div className="pt-4 border-t border-gray-700">
               <h5 className="font-medium mb-3">{t('FooterL14')}</h5>
               <div className="space-y-2 text-sm">
@@ -147,6 +150,8 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+            */}
+
           </div>
 
           {/* Contact Information Usa*/}
@@ -163,6 +168,8 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
+
+
 
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
@@ -191,7 +198,7 @@ const Footer = () => {
               
 
 
-              
+              {/* Contact Information España*
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-1" />
                 <div>
@@ -200,12 +207,11 @@ const Footer = () => {
                     {t('FooterL33')}
                   </p>
                 </div>
-
-                  
-
-                
+             
               </div>
+              */}
 
+              {/*}  
               <div className="flex items-center space-x-3 g-gray-800 rounded-lg">
                 <Phone className="h-5 w-5 text-blue-400" />
                 <div>
@@ -249,9 +255,11 @@ const Footer = () => {
                 </a>
                 
                 </div>
-                 */}
+                 
 
               </div>
+              */}
+
 
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
