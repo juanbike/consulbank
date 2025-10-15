@@ -32,13 +32,12 @@ const MainPage = () => (
   <>
     <HeroSection />
     <Soluciones1 />
-    <Nosotros />
-    <PorqueConsulbank/>
-    <CaracterisiticasApp />
+     <PorqueConsulbank/>
     <Servicios />
-    <Testimonios />   
+    <Testimonios /> 
     <SingleCardCarousel />
-    
+    <CaracterisiticasApp />
+    <Nosotros />
    
     <ContactForm />
     <Footer />

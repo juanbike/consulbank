@@ -18,8 +18,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Nunito', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			colors: {
+				'custom-dark': '#1B1B1B',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

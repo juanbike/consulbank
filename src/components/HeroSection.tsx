@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900" id="Hero">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 font-sans text-base" id="Hero">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
@@ -66,8 +66,8 @@ const HeroSection = () => {
               <div className="hidden md:flex items-center space-x-8">
                 {/*<a href="#inicio" className="text-gray-800 hover:text-gray-900 transition-colors">Nosotros</a> */}
                 {/*<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Servicios</a> */}
-                <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors">Ticket Soporte</a>
-                <Link to="/blog" className="text-gray-800 hover:text-gray-900 transition-colors">Blog</Link>
+                <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Ticket Soporte</a>
+                <Link to="/blog" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Blog</Link>
               </div>
 
 

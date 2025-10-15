@@ -4,48 +4,79 @@ const SingleCardCarouselAdaptiveContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const cards = [
-    {
-      title: "Nace Consulbank",
-      description: "Implementamos la App de Administración de Créditos y Cobranzas para Banco Federal, Banco Consolidado, Banco Sofitasa, Banco Industrial de Venezuela, marcando el inicio de nuestra trayectoria en innovación financiera.",
-      image: "images/bancofederal.png",
-      color: "from-blue-500 to-blue-600",
-      features: ["1998"]
+  
+	
+	{
+	  title: "Cierre Centralizado de Operaciones Electrónicas Interbancarias.",
+      description: "Facilita la transferencia y compensación electrónica de fondos entre bancos, manejando cargas de trabajo intensivas y datos escalables. Esta solución asegura la precisión y eficiencia en el procesamiento de transacciones financieras, optimizando las operaciones bancarias diarias.",
+      image: "images/cierrecentralizado.png",
+      color: "from-indigo-500 to-indigo-600",
+      features: ["2023-2025"] 
+	}, 
+	{
+      title: "Conciliación de Transacciones Electrónicas Bancarias",
+      description: "Nuestra solución de conciliación electrónica optimiza la gestión financiera al garantizar una precisión inigualable. Esta se logra al sincronizar cada movimiento monetario entre los registros internos y la facturación de proveedores.",
+      image: "images/conciliacion.png",
+      color: "from-indigo-500 to-indigo-600",
+      features: ["2023-2025"] 
     },
-    {
-      title: "Innovación Bancaria",
-      description: "Lanzamos la aplicación de Conciliación de Transacciones Electrónicas y Medios de Pago para el Banco del Tesoro, Bamplus, BFC, Banco Guayana, Banco Caroní ",
-      image: "images/bamplus.png",
-      color: "from-green-500 to-green-600",
-      features: ["2005"]
+	
+	{
+      title: "Emprendimiento Tecnológico",
+      description: "Checkbank funciona como una herramienta integral que facilita las operaciones diarias de los comerciantes, incorporando diversas funciones esenciales. Estas incluyen un botón y un enlace de pago, un POS virtual y un panel administrativo. Todas estas características están diseñadas para optimizar la gestión de pagos y cobros en pequeños negocios.",
+      image: "images/checkbank.jpg",
+      color: "from-indigo-500 to-indigo-600",
+      features: ["2021"] 
     },
-    {
-      title: "Innovación Bancaria",
-      description: "Reconversión Monetaria: Desarrollamos soluciones tecnológicas para facilitar la transición durante la reconversión monetaria en Venezuela, asegurando la continuidad operativa de nuestros clientes: Banco Sofitasa, Banco Guayana, Banco Caroní y Banco del Tesoro.",
-      image: "images/sofitasa.png",
-      color: "from-purple-500 to-purple-600",
-      features: ["2007"]
+	{
+      title: "Reconversión Monetaria",
+      description: "Adaptación de las operaciones activas y pasivas del banco para que refleje el nuevo cono monetario.",
+      image: "images/bancodeltesoro.png",
+      color: "from-indigo-500 to-indigo-600",
+      features: ["2017"] 
     },
-    {
-      title: "Transformación Digital",
-      description: "Implementamos la aplicación Atomos Sudeban para Bamplus, BFC, Banca Amiga.",
-      image: "images/bfc.png",
-      color: "from-red-500 to-red-600",
-      features: ["2010"]
-    },
-    {
+	{
       title: "Fusión Bancos",
       description: "Se implemento una migración del Banco Caroní al Banco Guayana.",
       image: "images/bancoguayana.png",
       color: "from-yellow-500 to-yellow-600",
-      features: ["2015"]
+      features: ["2015"] 
+	},
+	{
+      title: "Transformación Digital",
+      description: "Implementamos la aplicación Atomos Sudeban para Bamplus, BFC, Banca Amiga.",
+      image: "images/bfc.png",
+      color: "from-red-500 to-red-600",
+      features: ["2010"] 
     },
-    {
-      title: "Escalabilidad Ilimitada",
-      description: "Crecemos contigo, adaptándonos a las necesidades de tu negocio sin límites de capacidad.",
-      image: "https://picsum.photos/seed/expansion/400/300",
-      color: "from-indigo-500 to-indigo-600",
-      features: ["Cloud nativo", "Elastic scaling", "Global reach"]
-    }
+	{
+      title: "Innovación Bancaria",
+      description: "Reconversión Monetaria: Desarrollamos soluciones tecnológicas para facilitar la transición durante la reconversión monetaria en Venezuela, asegurando la continuidad operativa de nuestros clientes: Banco Sofitasa, Banco Guayana, Banco Caroní y Banco del Tesoro.",
+      image: "images/sofitasa.png",
+      color: "from-purple-500 to-purple-600",
+      features: ["2007"] 
+    },
+	{
+      title: "Innovación Bancaria",
+      description: "Lanzamos la aplicación de Conciliación de Transacciones Electrónicas y Medios de Pago para el Banco del Tesoro, Bamplus, BFC, Banco Guayana, Banco Caroní ",
+      image: "images/bamplus.png",
+      color: "from-green-500 to-green-600",
+      features: ["2005"] 
+    },
+	{
+      title: "Innovación Bancaria",
+      description: "Se crean varios SISTEMAS DE CRÉDITO: Cremerca - Sistema de Crédito al Consumo. Banco Industrial - Sistema de Factoring. Banco Federal - Sistema de Crédito. Banco Consolidado: Sistema de Crédito Hipotecario. Sociedad Financiera - Sistema de Crédito", 
+      image: "images/bancoconsolidado.png",
+      color: "from-green-500 to-green-600",
+      features: ["2000"] 
+    },
+	{
+      title: "Nace Consulbank",
+      description: "Implementamos la App de Administración de Créditos y Cobranzas para Banco Guayana y Banco Federal. (Aplicación de crédito y cobranza para clientes naturales o juridicos) marcando el inicio de nuestra trayectoria en innovación financiera.",
+      image: "images/bancoguayana.png",
+      color: "from-blue-500 to-blue-600",
+      features: ["1998"] 
+    },
   ];
 
   const nextSlide = () => {
