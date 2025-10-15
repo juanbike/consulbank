@@ -12,6 +12,7 @@ import Testimonios from './components/testimonio';
 import Soluciones1 from './components/soluciones1';
 import  SingleCardCarousel  from './components/carousel';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/blog" element={<BlogPage />} />
         </Routes>
+        <WhatsAppButton />
       </div>
     </Router>
   );
