@@ -29,7 +29,7 @@ const PorqueConsulbank = () => {
     },
     {
       id: 3,
-      title: 'Infraestructura Sólida y Probada en Producción',
+      title: 'Tecnología Sólida y Probada en Producción',
       description: 'Consulbank te da la seguridad de un socio con experiencia. Nuestros sistemas están desarrollados bajo estrictos estándares bancarios y cuentan con casos de uso implementados en instituciones bancarias y redes transaccionales, actualmente en producción a gran escala.',
       icon: 'FaUniversity',
       color: 'text-blue-600'
