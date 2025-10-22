@@ -1,71 +1,95 @@
 import { Feature } from '../types';
-import { 
-  FaTachometerAlt, 
-  FaPiggyBank, 
-  FaUniversity, 
-  FaLock, 
-  FaHandshake, 
+import {
+  FaTachometerAlt,
+  FaPiggyBank,
+  FaUniversity,
+  FaLock,
+  FaHandshake,
   FaHeadset,
   FaClock,
   FaShieldAlt,
-  FaChartBar
+  FaChartBar,
+  FaAward,
+  FaCheckCircle,
+  FaServer,
+  FaStore,
+  FaLink,
+  FaCreditCard,
+  FaShoppingCart,
+  FaCode,
+  FaRocket
 } from 'react-icons/fa';
 
 const PorqueConsulbank = () => {
   const features: (Feature & { color: string })[] = [
     {
       id: 1,
-      title: 'Información a Tiempo para Decidir Mejor',
-      description: 'El tiempo es dinero, y la precisión es poder. Al reducir los errores de conciliación en un 95% y acortar los cierres de semanas a días, Consulbank te da acceso inmediato a datos impecables.',
-      icon: 'FaTachometerAlt',
+      title: 'Más de 25 Años Respaldando la Banca con Innovación.',
+      description: 'Nuestra ventaja principal radica en nuestra <strong>vasta experiencia y robustez tecnológica.</strong> Con más de <strong>25 años en el sector financiero</strong> y una marcada orientación hacia la <strong>innovación Fintech</strong>, proveemos desarrollo de software y <strong>soluciones personalizadas.</strong> Estas se caracterizan por su <strong>escalabilidad, potencia y seguridad extrema</strong>, lo que simplifica enormemente la adición de nuevos servicios.',
+      icon: 'FaAward',
       color: 'text-blue-600'
     },
     {
       id: 2,
-      title: 'Reduce Costos Operacionales',
-      description: 'Este ahorro de tiempo se traduce directamente en una reducción significativa en tus costos operativos, permitiendo que tu talento humano se enfoque en tareas de alto valor.',
-      icon: 'FaPiggyBank',
-      color: 'text-blue-600'
-    },
-    {
-      id: 3,
-      title: 'Tecnología Sólida y Probada en Producción',
-      description: 'Consulbank te da la seguridad de un socio con experiencia. Nuestros sistemas están desarrollados bajo estrictos estándares bancarios y cuentan con casos de uso implementados en instituciones bancarias y redes transaccionales, actualmente en producción a gran escala.',
-      icon: 'FaUniversity',
-      color: 'text-blue-600'
-    },
-    {
-      id: 4,
-      title: 'Arquitectura Sólida y Probada: El Poder de IBM',
-      description: 'La solidez de nuestras soluciones reside en su infraestructura: Utilizamos IBM Power para garantizar un procesamiento rápido y la máxima seguridad de la data crítica. Esto se complementa con un riguroso cumplimiento normativo y una arquitectura diseñada para la integración total con sistemas.',
-      icon: 'FaLock',
-      color: 'text-blue-600'
-    },
-    {
-      id: 5,
-      title: 'El Socio que Impulsa tu Crecimiento',
-      description: 'Dejamos la gestión de números en manos de la tecnología para liberar tu potencial. Consulbank se posiciona como tu socio estratégico que elimina las distracciones operativas, permitiéndote a ti y a tu equipo enfocarse 100% en el crecimiento del negocio, la innovación y la toma de decisiones estratégicas. Tu éxito es nuestro único objetivo.',
-      icon: 'FaHandshake',
+      title: 'Tecnología probada: Ya en Funcionamiento en Bancos Líderes.',
+      description: '<strong>Consulbank</strong> le ofrece la confianza de un <strong>socio experimentado</strong>, destacando que nuestra tecnología ya ha sido validada. Nuestros sistemas, desarrollados bajo los más rigurosos <strong>estándares bancarios</strong>, se encuentran <strong>actualmente en producción a gran escala</strong>. Esto le permite implementar soluciones con <strong>casos de uso probados</strong> que gestionan transacciones para <strong>importantes instituciones bancarias</strong> y <strong>redes interbancarias</strong>. Elija una tecnología que ya ha demostrado su eficacia.',
+      icon: 'FaCheckCircle',
       color: 'text-green-600'
     },
     {
+      id: 3,
+      title: 'Arquitectura de Élite: El Poder Comprobado de IBM.',
+      description: 'Nuestras soluciones se fundamentan en la <strong>arquitectura IBM Power</strong>, la plataforma predilecta del sector bancario. Esto asegura una <strong>velocidad de procesamiento superior y una solidez inquebrantable para sus datos más críticos</strong>. <strong>Garantizamos</strong> la conformidad normativa y una <strong>integración completa</strong> y <strong>sin interrupciones</strong> con sus <strong>sistemas actuales</strong>. La fiabilidad es nuestro pilar fundamental.',
+      icon: 'FaServer',
+      color: 'text-blue-600'
+    },
+
+    {
+      id: 4,
+      title: 'Fabrica de Software Enfocada en el Sector Bancario.',
+      description: 'Contamos con un equipo de <strong>profesionales altamente cualificados</strong> y especializados en cada fase del ciclo de vida del proyecto. Nuestro equipo de <strong>Gestión de Proyectos</strong> garantiza una ejecución impecable y una comunicación transparente en todo momento. Los <strong>expertos en Desarrollo</strong> se encargan de transformar las ideas en <strong>funcionalidades robustas y escalables</strong>, mientras que nuestro <strong>equipo de Calidad (QA)</strong> se dedica a asegurar la <strong>fiabilidad, seguridad y rendimiento óptimo</strong> de cada solución antes de su implementación. Con <strong>Consulbank</strong>, usted invierte en soluciones tecnológicas que impulsan su crecimiento y fortalecen su posición en el mercado financiero.',
+      icon: 'FaCode',
+      color: 'text-orange-600'
+    },
+    {
+      id: 5,
+      title: 'Modernización de Aplicaciones Legadas',
+      description: '<strong>La Modernización</strong> convierte sus activos empresariales legados en <strong>aplicaciones ágiles y escalables.</strong> Renovamos sus sistemas (mediante refactorización o re-escritura) e <strong>integramos su lógica central</strong> a través de APIs, ofreciendo interfaces modernas (web y móvil) y <strong>conectividad total con la nube.</strong> El resultado es dotar a las aplicaciones de </strong>interfaces gráficas</strong> intuitivas (móviles y web) y facilitar su </strong>integración con otros sistemas</strong> y la nube.',
+      icon: 'FaRocket',
+      color: 'text-orange-600'
+    },
+    
+    {
       id: 6,
-      title: 'Soporte Experto 24/7 y Gestión Automatizada',
+      title: 'Soporte Experto 24/7 y Ticket Support.',
       description: 'Tu negocio no descansa, y nosotros tampoco. Accede a asistencia técnica especializada y experta 24/7. Para garantizar la máxima eficiencia y trazabilidad, todas tus solicitudes se gestionan a través de nuestro sistema automatizado de ticket support.',
       icon: 'FaHeadset',
-      color: 'text-blue-600'
+      color: 'text-orange-600'
     }
+
   ];
 
   const getIcon = (iconName: string, color: string) => {
     switch (iconName) {
-      case 'FaTachometerAlt': return <FaTachometerAlt className={`text-3xl ${color}`} />;
-      case 'FaPiggyBank': return <FaPiggyBank className={`text-3xl ${color}`} />;
-      case 'FaUniversity': return <FaUniversity className={`text-3xl ${color}`} />;
-      case 'FaLock': return <FaLock className={`text-3xl ${color}`} />;
-      case 'FaHandshake': return <FaHandshake className={`text-3xl ${color}`} />;
-      case 'FaHeadset': return <FaHeadset className={`text-3xl ${color}`} />;
-      default: return <FaTachometerAlt className={`text-3xl ${color}`} />;
+      case 'FaTachometerAlt': return <FaTachometerAlt className={`text-7xl ${color}`} />;
+      case 'FaPiggyBank': return <FaPiggyBank className={`text-7xl ${color}`} />;
+      case 'FaUniversity': return <FaUniversity className={`text-7xl ${color}`} />;
+      case 'FaLock': return <FaLock className={`text-7xl ${color}`} />;
+      case 'FaHandshake': return <FaHandshake className={`text-7xl ${color}`} />;
+      case 'FaHeadset': return <FaHeadset className={`text-7xl ${color}`} />;
+      case 'FaClock': return <FaClock className={`text-7xl ${color}`} />;
+      case 'FaShieldAlt': return <FaShieldAlt className={`text-7xl ${color}`} />;
+      case 'FaChartBar': return <FaChartBar className={`text-7xl ${color}`} />;
+      case 'FaAward': return <FaAward className={`text-7xl ${color}`} />;
+      case 'FaCheckCircle': return <FaCheckCircle className={`text-7xl ${color}`} />;
+      case 'FaServer': return <FaServer className={`text-7xl ${color}`} />;
+      case 'FaStore': return <FaStore className={`text-7xl ${color}`} />;
+      case 'FaLink': return <FaLink className={`text-7xl ${color}`} />;
+      case 'FaCreditCard': return <FaCreditCard className={`text-7xl ${color}`} />;
+      case 'FaShoppingCart': return <FaShoppingCart className={`text-7xl ${color}`} />;
+      case 'FaCode': return <FaCode className={`text-7xl ${color}`} />;
+      case 'FaRocket': return <FaRocket className={`text-7xl ${color}`} />;
+      default: return <FaTachometerAlt className={`text-7xl ${color}`} />;
     }
   };
 
@@ -74,7 +98,7 @@ const PorqueConsulbank = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Por qué Elegir Consulbank
+            ¿Por qué Elegir a Consulbank?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Todo lo que necesitas para una gestión financiera eficiente
@@ -83,26 +107,24 @@ const PorqueConsulbank = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={feature.id}
               className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group transform hover:scale-105"
             >
               <div className="mb-4">
                 {getIcon(feature.icon, feature.color)}
               </div>
-              
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                 {feature.title}
               </h3>
-              
-              <p className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
+
+              <p className="text-gray-600 leading-relaxed text-justify" dangerouslySetInnerHTML={{ __html: feature.description }} />
             </div>
           ))}
         </div>
 
-        
+
       </div>
     </section>
   );

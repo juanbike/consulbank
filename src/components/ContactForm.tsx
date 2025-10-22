@@ -268,7 +268,7 @@ const ContactForm = () => {
           </div>
 
           {/* ***********Right Column - Form************** */}
-          <section className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 py-12 px-4 rounded-xl shadow-lg">
+          <section id="contacto"      className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 py-12 px-4 rounded-xl shadow-lg">
             <div className="max-w-3xl mx-auto text-center">
               {/* Título del CTA */}
               <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">

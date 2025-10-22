@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, BarChart3, Users } from "lucide-react";
+import { ArrowRight, Shield, BarChart3, Users, Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { FaEnvelope } from "react-icons/fa";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  SheetClose
+} from "@/components/ui/sheet";
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation(); // Initialize translation hook
@@ -56,7 +64,7 @@ const HeroSection = () => {
                   <img
                     src="/images/logooficial.webp"
                     alt="Consulbank - Inicio"
-                    className="h-12 w-auto md:block"
+                    className="h-12 w-auto"
                   />
                 </a>
               </div>
@@ -64,21 +72,55 @@ const HeroSection = () => {
               {/* Menú de navegación */}
 
               <div className="hidden md:flex items-center space-x-8">
-                {/*<a href="#inicio" className="text-gray-800 hover:text-gray-900 transition-colors">Nosotros</a> */}
-                {/*<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Servicios</a> */}
+                {<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Soluciones</a> }
+                {<a href="#trayectoria" className="text-gray-800 hover:text-gray-900 transition-colors">Conocenos</a> }
                 <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Ticket Soporte</a>
                 <Link to="/blog" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Blog</Link>
+                <a href="#contacto" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Contacto</a>
+              </div>
+
+              {/* Mobile Menu */}
+              <div className="md:hidden flex items-center">
+                <Sheet>
+                  <SheetTrigger asChild>
+                    <Button variant="outline" size="icon">
+                      <Menu className="h-6 w-6" />
+                    </Button>
+                  </SheetTrigger>
+                  <SheetContent className="bg-gray-800 text-white">
+                    <SheetHeader>
+                      <SheetTitle className="text-white">Menu</SheetTitle>
+                    </SheetHeader>
+                    <div className="grid gap-4 py-4">
+                      <SheetClose asChild>
+                        <a href="#servicios" className="text-gray-200 hover:text-white transition-colors">Soluciones</a>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <a href="#trayectoria" className="text-gray-200 hover:text-white transition-colors">Conocenos</a>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="font-montserrat text-[16px] transition-colors">Ticket Soporte</a>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link to="/blog" className="font-montserrat text-[16px] transition-colors">Blog</Link>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <a href="#contacto" className="font-montserrat text-[16px] transition-colors">Contacto</a>
+                      </SheetClose>
+                    </div>
+                  </SheetContent>
+                </Sheet>
               </div>
 
 
               {/* Redes sociales */}
-              <div className="flex items-center space-x-3">
+              <div className="hidden md:flex items-center space-x-3">
                 {/* Twitter/X - Ocultar en móvil */}
                 <a
                   href="https://twitter.com/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
                   aria-label="Twitter"
                 >
                   <img
@@ -93,7 +135,7 @@ const HeroSection = () => {
                   href="https://linkedin.com/company/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
                   aria-label="LinkedIn"
                 >
                   <img
@@ -108,7 +150,7 @@ const HeroSection = () => {
                   href="https://facebook.com/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition md:block hidden"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
                   aria-label="Facebook"
                 >
                   <img

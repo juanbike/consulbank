@@ -1,3 +1,4 @@
+import { Service } from '../types';
 import { FaChartLine, FaSyncAlt, FaShieldAlt } from 'react-icons/fa';
 
 const Soluciones = () => {
@@ -9,7 +10,7 @@ const Soluciones = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden font-sans">
+    <section id='solucionesapp'  className="relative min-h-screen flex items-center overflow-hidden font-sans">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
       

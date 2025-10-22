@@ -11,6 +11,9 @@ import PorqueConsulbank from './components/PorqueConsulbank';
 import Testimonios from './components/testimonio';
 import Soluciones1 from './components/soluciones1';
 import  SingleCardCarousel  from './components/carousel';
+import SolucionesBancarias from './components/solucionesBancarias';
+import SolucionesComercios from './components/solucionesComercios';
+import SolucionesRedesInterbancarias from './components/solucionesRedesInterbancarias';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
@@ -35,6 +38,9 @@ const MainPage = () => (
     <HeroSection />
     <Soluciones1 />
      <PorqueConsulbank/>
+    <SolucionesBancarias />
+    <SolucionesComercios />
+    <SolucionesRedesInterbancarias />
     <Servicios />
     <Testimonios /> 
     <SingleCardCarousel />

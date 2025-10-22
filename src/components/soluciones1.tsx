@@ -19,7 +19,7 @@ const Soluciones1 = () => {
             </h1>
 
             <h3 className="text-2xl lg:text-3xl font-semibold text-gray-700 my-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              En Consulbank, hacemos que la tecnología se convierta en tu mejor aliado para optimizar procesos, reducir costos y potenciar la seguridad de tus operaciones bancarias.
+              En Consulbank C.A. hacemos que la tecnología se convierta en tu mejor aliado para optimizar procesos, reducir costos y potenciar la seguridad de tus operaciones bancarias.
             </h3>
             
             <p className="text-lg lg:text-xl mb-8 leading-relaxed animate-fade-in-up font-light text-gray-600" style={{ animationDelay: '0.2s' }}>

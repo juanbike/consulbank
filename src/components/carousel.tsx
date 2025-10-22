@@ -92,6 +92,7 @@ const SingleCardCarouselAdaptiveContainer = () => {
   };
 
   return (
+    <section id="trayectoria" >
     <div className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título */}
@@ -203,6 +204,8 @@ const SingleCardCarouselAdaptiveContainer = () => {
         </div>
       </div>
     </div>
+    </section>
+
   );
 };
 
