@@ -59,7 +59,7 @@ const SolucionesBancarias = () => {
     {
       id: 5,
       title: 'Suite Checkbank® Créditos: Modelo Financiamiento "Compra Ahora, Paga Después"',
-      description: 'Nuestra Plataforma de Créditos y Cobranzas es el <strong>backend paramétrico y robusto</strong> que impulsa el modelo <strong>Buy Now, Pay Later (BNPL)</strong> en Fintechs (estilo Cashea). Esta arquitectura les permite <strong>lanzar en minutos</strong> esquemas de <strong>financiamiento a corto plazo</strong> y asegurar una <strong>integración rápida </strong> con la banca. Al usar nuestra plataforma, sus clientes tecnológicos obtienen la <strong>seguridad y escalabilidad bancaria</strong> para ofrecer la velocidad del crédito instantáneo <strong>directamente en el punto de venta</strong> al consumidor final.',
+      description: 'Somos la <strong>columna vertebral</strong> tecnológica que permite a las <strong>Fintechs</strong> operar con éxito el modelo de financiación <strong>"Compra Ahora, Paga Después"</strong> (Buy Now, Pay Later). Nuestra robusta Plataforma de <strong>Créditos y Cobranzas</strong> actúa como un backend paramétrico de alto rendimiento, gestionando de forma eficiente la <strong>administración de créditos</strong>, la originación y la recuperación de cartera.',
       icon: 'FaMoneyBillWave',
       color: 'text-blue-600'
     }
