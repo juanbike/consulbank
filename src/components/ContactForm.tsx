@@ -154,23 +154,23 @@ const ContactForm = () => {
     /* ***********Crea una función (handleChange) - Form**************
   if (isSubmitted) {
     return (
-      <section className="py-20 bg-white" id="contact">
+      <section className="py-20 bg-white dark:bg-gray-900" id="contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-green-50 border border-green-200 rounded-2xl p-12">
+            <div className="bg-green-50 border border-green-200 rounded-2xl p-12 dark:bg-green-900/50 dark:border-green-800">
               <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
-              <h3 className="text-3xl font-bold text-green-800 mb-4">
+              <h3 className="text-3xl font-bold text-green-800 mb-4 dark:text-green-300">
                 ¡Solicitud Enviada Exitosamente!
               </h3>
-              <p className="text-green-700 text-lg mb-6">
+              <p className="text-green-700 text-lg mb-6 dark:text-green-400">
                 Gracias por su interés en nuestro Sistema de Cierre Centralizado
                 Bancario.
               </p>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h4 className="font-semibold text-gray-900 mb-3">
+              <div className="bg-white rounded-lg p-6 shadow-sm dark:bg-gray-800">
+                <h4 className="font-semibold text-gray-900 mb-3 dark:text-white">
                   Próximos Pasos:
                 </h4>
-                <div className="space-y-2 text-sm text-gray-700">
+                <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                   <div>
                     ✅ Nuestro equipo revisará su solicitud en las próximas 2
                     horas
@@ -194,70 +194,70 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="py-20 bg-white" id="contact">
+    <section className="py-20 bg-white dark:bg-gray-900" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* **********Left Column - Information********** */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-white">
                 {t("contactTitle")}
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed dark:text-gray-300">
                 {t("contactSubTitle")}
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center dark:bg-blue-900/50">
                   <CheckCircle className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 dark:text-white">
                     {t("contactTitleOne")}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm dark:text-gray-400">
                     {t("contactSubTitleOne")}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center dark:bg-green-900/50">
                   <CheckCircle className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 dark:text-white">
                     {t("contactTitleTwo")}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm dark:text-gray-400">
                     {t("contactSubTitleTwo")}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center dark:bg-purple-900/50">
                   <CheckCircle className="h-6 w-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 dark:text-white">
                     {t("contactTitleThree")}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm dark:text-gray-400">
                     {t("contactSubTitleThree")}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="font-bold text-blue-900 mb-3">
+            <div className="bg-blue-50 rounded-lg p-6 dark:bg-blue-900/50">
+              <h3 className="font-bold text-blue-900 mb-3 dark:text-blue-200">
                 {" "}
                 {t("chooseTitle")}
               </h3>
-              <div className="space-y-2 text-sm text-blue-800">
+              <div className="space-y-2 text-sm text-blue-800 dark:text-blue-300">
                 <div>🏆 {t("chooseSubTitleOne")}</div>
                 <div>🔧 {t("chooseSubTitleTwo")}</div>
                 <div>⚡ {t("chooseSubTitleThree")}</div>
@@ -286,7 +286,7 @@ const ContactForm = () => {
                     href="https://wa.me/13054001178" // ← Formato internacional para WhatsApp
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center text-blue-500 hover:text-blue-700 transition-colors duration-300 mb-2"
+                    className="flex flex-col items-center text-blue-500 hover:text-blue-700 transition-colors duration-300 mb-2 dark:text-blue-400 dark:hover:text-blue-500"
                   >
                   <img
                     src="/images/whatsapp.webp"
@@ -307,7 +307,7 @@ const ContactForm = () => {
                 <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2"></h3>
                 <a
                   href="mailto:info@consulbank.com.ve"
-                  className="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex flex-col items-center"
+                  className="text-blue-500 hover:text-blue-700 transition-colors duration-300 flex flex-col items-center dark:text-blue-400 dark:hover:text-blue-500"
                 >
                   <img
                     src="/images/email.webp"

@@ -26,10 +26,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 font-sans text-base" id="Hero">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 font-sans text-base dark:from-slate-900 dark:via-slate-800 dark:to-gray-900" id="Hero">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+      <div className="absolute inset-0 opacity-30 dark:opacity-50">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20 dark:from-blue-900/30 dark:to-purple-900/30"></div>
         <div
           className="absolute inset-0"
           style={{
@@ -41,17 +41,17 @@ const HeroSection = () => {
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50">
         {/* Top bar for contact info */}
-        <div className="bg-gray-100 text-gray-700 py-1">
+        <div className="bg-gray-100 text-gray-700 py-1 dark:bg-gray-800 dark:text-gray-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start items-center">
                 <div className="flex items-center space-x-2 text-sm">
                     <FaEnvelope />
-                    <a href="mailto:info@consulbank.com.ve" className="hover:text-blue-600">info@consulbank.com.ve</a>
+                    <a href="mailto:info@consulbank.com.ve" className="hover:text-blue-600 dark:hover:text-blue-400">info@consulbank.com.ve</a>
                 </div>
             </div>
         </div>
 
         {/* Main Navigation */}
-        <nav className="bg-white border-b border-gray-200">
+        <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               {/* Logo - Ahora es un enlace */}
@@ -72,11 +72,12 @@ const HeroSection = () => {
               {/* Menú de navegación */}
 
               <div className="hidden md:flex items-center space-x-8">
-                {<a href="#servicios" className="text-gray-800 hover:text-gray-900 transition-colors">Soluciones</a> }
-                {<a href="#trayectoria" className="text-gray-800 hover:text-gray-900 transition-colors">Conocenos</a> }
-                <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Ticket Soporte</a>
-                <Link to="/blog" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Blog</Link>
-                <a href="#contacto" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors">Contacto</a>
+                {<a href="#SolucionesBancariasUno" className="text-gray-800 hover:text-gray-900 transition-colors dark:text-gray-200 dark:hover:text-white">Soluciones</a> }
+                {<a href="#trayectoria" className="text-gray-800 hover:text-gray-900 transition-colors dark:text-gray-200 dark:hover:text-white">Casos de Exito</a> }
+                <Link to="/acerca-de" className="text-gray-800 hover:text-gray-900 transition-colors dark:text-gray-200 dark:hover:text-white">Acerca de</Link>
+                <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors dark:text-gray-200 dark:hover:text-white">Ticket Soporte</a>
+                <Link to="/blog" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors dark:text-gray-200 dark:hover:text-white">Blog</Link>
+                <a href="#contacto" className="font-montserrat text-[14px] text-custom-dark hover:text-gray-900 transition-colors dark:text-gray-200 dark:hover:text-white">Contacto</a>
               </div>
 
               {/* Mobile Menu */}
@@ -87,9 +88,9 @@ const HeroSection = () => {
                       <Menu className="h-6 w-6" />
                     </Button>
                   </SheetTrigger>
-                  <SheetContent className="bg-gray-800 text-white">
+                  <SheetContent className="bg-gray-800 text-white dark:bg-gray-900 dark:text-gray-200">
                     <SheetHeader>
-                      <SheetTitle className="text-white">Menu</SheetTitle>
+                      <SheetTitle className="text-white dark:text-gray-200">Menu</SheetTitle>
                     </SheetHeader>
                     <div className="grid gap-4 py-4">
                       <SheetClose asChild>
@@ -97,6 +98,9 @@ const HeroSection = () => {
                       </SheetClose>
                       <SheetClose asChild>
                         <a href="#trayectoria" className="text-gray-200 hover:text-white transition-colors">Conocenos</a>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <Link to="/acerca-de" className="font-montserrat text-[16px] transition-colors">Acerca de</Link>
                       </SheetClose>
                       <SheetClose asChild>
                         <a href="https://www.consulbank.com.ve/helpdesk/glpi/" target="_blank" rel="noopener noreferrer" className="font-montserrat text-[16px] transition-colors">Ticket Soporte</a>
@@ -120,7 +124,7 @@ const HeroSection = () => {
                   href="https://twitter.com/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition dark:bg-white/5 dark:hover:bg-white/10"
                   aria-label="Twitter"
                 >
                   <img
@@ -135,7 +139,7 @@ const HeroSection = () => {
                   href="https://linkedin.com/company/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition dark:bg-white/5 dark:hover:bg-white/10"
                   aria-label="LinkedIn"
                 >
                   <img
@@ -150,7 +154,7 @@ const HeroSection = () => {
                   href="https://facebook.com/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition dark:bg-white/5 dark:hover:bg-white/10"
                   aria-label="Facebook"
                 >
                   <img
@@ -165,7 +169,7 @@ const HeroSection = () => {
                   href="https://instagram.com/consulbank"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition dark:bg-white/5 dark:hover:bg-white/10"
                   aria-label="Instagram"
                 >
                   <img
@@ -180,7 +184,7 @@ const HeroSection = () => {
                   href="https://wa.me/13054001178"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition"
+                  className="flex items-center justify-center h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 transition dark:bg-white/5 dark:hover:bg-white/10"
                   aria-label="WhatsApp"
                 >
                   <img
@@ -299,8 +303,8 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center dark:border-white/50">
+          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse dark:bg-white/70"></div>
         </div>
       </div>
     </section>

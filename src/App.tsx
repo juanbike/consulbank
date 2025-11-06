@@ -16,16 +16,20 @@ import SolucionesComercios from './components/solucionesComercios';
 import SolucionesRedesInterbancarias from './components/solucionesRedesInterbancarias';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import ThemeSwitcher from './components/ThemeSwitcher';
+import AcercaDe from './components/AcercaDe';
 import './App.css';
 
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
+        <ThemeSwitcher />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/acerca-de" element={<AcercaDe />} />
         </Routes>
         <WhatsAppButton />
       </div>
@@ -41,12 +45,10 @@ const MainPage = () => (
     <SolucionesBancarias />
     <SolucionesComercios />
     <SolucionesRedesInterbancarias />
-    <Servicios />
+    <CaracterisiticasApp />
+    
     <Testimonios /> 
     <SingleCardCarousel />
-    <CaracterisiticasApp />
-    <Nosotros />
-   
     <ContactForm />
     <Footer />
   </>

@@ -5,7 +5,7 @@ const TestimonialsModule = () => {
     {
       name: "Juan Carlos",
       position: "CEO de TechCorp",
-      content: "ConsultBank ha revolucionado por completo nuestra gestión financiera. Hemos reducido un 85% el tiempo de conciliación y hemos eliminado por completo los errores operativos.",
+      content: "Consulbank ha revolucionado por completo nuestra gestión financiera. Hemos reducido un 85% el tiempo de conciliación y hemos eliminado por completo los errores operativos.",
       rating: 5
     },
     {
@@ -17,7 +17,7 @@ const TestimonialsModule = () => {
     {
       name: "Pedro Lopez",
       position: "Gerente de Operaciones de FinancePro",
-      content: "ConsultBank es nuestro socio estratégico de confianza. Su seguridad y fiabilidad nos han permitido crecer con total tranquilidad.",
+      content: "Consulbank es nuestro socio estratégico de confianza. Su seguridad y fiabilidad nos han permitido crecer con total tranquilidad.",
       rating: 5
     }
   ];
@@ -31,15 +31,15 @@ const TestimonialsModule = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-indigo-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-white">
             ¿Qué Dicen Nuestros Clientes?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experiencias reales de empresas que confían en nosotros
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
+            Experiencias Reales de Empresas que Confían en Nosotros
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const TestimonialsModule = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-1"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-1 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               {/* Estrellas */}
               <div className="flex mb-4">
@@ -56,16 +56,16 @@ const TestimonialsModule = () => {
               </div>
               
               {/* Comentario */}
-              <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              <p className="text-gray-700 text-lg mb-6 leading-relaxed dark:text-gray-300">
                 "{testimonial.content}"
               </p>
               
               {/* Info del Cliente */}
-              <div className="border-t pt-6">
-                <h3 className="text-xl font-semibold text-gray-900">
+              <div className="border-t pt-6 dark:border-gray-700">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {testimonial.name}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-400">
                   {testimonial.position}
                 </p>
               </div>
@@ -73,12 +73,13 @@ const TestimonialsModule = () => {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA 
         <div className="text-center mt-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105 dark:bg-blue-700 dark:hover:bg-blue-800">
             Únete a Nuestros Clientes Satisfechos
           </button>
         </div>
+        */}
       </div>
     </section>
   );

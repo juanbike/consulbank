@@ -33,13 +33,13 @@ const Nosotros = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="caracteristicas">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-blue-900" id="caracteristicas">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-white">
             {t('features.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
             {t('features.subtitle')}
           </p>
         </div>
@@ -48,7 +48,7 @@ const Nosotros = () => {
           {features.map((feature, index) => (
             <div 
               key={`feature-${index}`}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:bg-gray-800 dark:border-gray-700"
             >
               <div className="p-8">
                 <div className={`inline-flex items-center justify-center w-16 h-16 ${feature.color} rounded-lg text-white mb-6`}>
@@ -56,11 +56,11 @@ const Nosotros = () => {
               </div>
 
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight dark:text-white">
                   {feature.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed dark:text-gray-300">
                   {feature.description}
                 </p>
               </div>

@@ -25,13 +25,20 @@ import {
   FaMoneyBillWave,
   FaBitcoin
 } from 'react-icons/fa';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const SolucionesRedesInterbancarias = () => {
-  const features: (Feature & { color: string })[] = [
+  const features: (Feature & { color: string, extraDescription?: string })[] = [
     {
       id: 1,
-      title: 'Nuestra Suite Checkbank® para Redes Interbancarias: Soluciones Integrales',
-      description: 'Nuestra plataforma ofrece las <strong>Soluciones para Redes Interbancarias</strong> que garantizan el <strong>Control Total de Compensación y Liquidación.</strong> Automatizamos todas las actividades interbancarias esenciales, lo que incluye la <strong>conciliación de transacciones interbancarias</strong> y la interconexión con redes externas. Además, gestionamos con precisión la <strong>transferencia de fondos</strong> y la <strong>compensación</strong> de las transacciones el proceso de <strong>liquidación.</strong> La solución integra el <strong>cálculo automatizado de comisiones</strong> para los bancos participantes y facilita el <strong>envío de la posición al ente regulador</strong> (Banco Central/LBTR). Con nuestra tecnología, su red obtiene la robustez y la eficiencia necesarias para operar de manera fluida, segura y en estricto <strong>cumplimiento normativo.</strong>',
+      title: 'La base tecnológica robusta y escalable que garantiza la operación de su red interbancaria',
+      description: 'Nuestra plataforma ofrece las <strong>Soluciones para Redes Interbancarias</strong> que garantizan el <strong>Control Total de Compensación y Liquidación.</strong> Automatizamos todas las actividades interbancarias esenciales, lo que incluye la <strong>conciliación de transacciones interbancarias</strong> y la interconexión con redes externas. ',
+      extraDescription:'Además, gestionamos con precisión la <strong>transferencia de fondos</strong> y la <strong>compensación</strong> de las transacciones el proceso de <strong>liquidación.</strong> La solución integra el <strong>cálculo automatizado de comisiones</strong> para los bancos participantes y facilita el <strong>envío de la posición al ente regulador</strong> (Banco Central/LBTR). ',
       icon: 'FaExchangeAlt',
       color: 'text-blue-600'
     }
@@ -69,39 +76,66 @@ const SolucionesRedesInterbancarias = () => {
   };
 
   return (
-    <section id="caracteristicas" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Soluciones para Redes Interbancarias
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Plataforma Core para la Red Interbancaria Digital.
-          </p>
-        </div>
-
-        <div className="flex justify-center gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={feature.id}
-              className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group transform hover:scale-105"
-            >
-              <div className="mb-4">
-                {getIcon(feature.icon, feature.color)}
-              </div>
-
-              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                {feature.title}
-              </h3>
-
-              <p className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: feature.description }} />
-            </div>
-          ))}
-        </div>
-
-
+    <section id="caracteristicas" className="py-20 bg-white dark:bg-gray-900">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 dark:text-white">
+          Soluciones para Redes Interbancarias - Suite Checkbank®
+        </h2>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
+          Plataforma Core para la Red Interbancaria Digital.
+        </p>
       </div>
+      <div className="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row gap-8 items-center">
+        <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <img src="/images/redesInterbancarias.png" alt="Compensación Centralizada" className="rounded-lg shadow-lg h-full object-cover" />
+        </div>
+        <div className="w-full lg:w-1/2">
+          <div className="flex flex-col">
+            {features.map((feature) => (
+              <div
+                key={feature.id}
+                className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group transform hover:scale-105 w-full dark:bg-gray-800 dark:hover:bg-gray-700"
+              >
+
+
+                <h3 className="text-2xl font-semibold text-gray-900 mb-3 dark:text-white">
+                  {feature.title}
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-justify dark:text-gray-300" dangerouslySetInnerHTML={{ __html: feature.description }} />
+                {feature.extraDescription && (
+                <Accordion type="single" collapsible>
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Leer más</AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-gray-600 leading-relaxed text-justify dark:text-gray-300" dangerouslySetInnerHTML={{ __html: feature.extraDescription }} />
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div className="text-center mt-12">
+        <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105 dark:bg-blue-700 dark:hover:bg-blue-800">
+          <a
+            href="https://cierrecentralizado.consulbank.com.ve/"
+            target="_blank"
+            rel="noopener noreferrer"
+            // Se añaden clases para que el enlace ocupe todo el botón y herede el color de texto
+            className="block text-white w-full h-full"
+          >
+            Conoce Nuestra Plataforma de Cierre Centralizado
+          </a>
+        </button>
+      </div>
+
     </section>
+
   );
 };
 

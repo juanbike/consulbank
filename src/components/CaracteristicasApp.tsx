@@ -26,7 +26,7 @@ const CaracterisiticasApp = () => {
     {
       id: 3,
       title: 'Enfoque estratégico',
-      description: 'La automatización libera al equipo financiero de tareas repetitivas y les permite enfocarse en el análisis estratégico para el crecimiento del negocio',
+      description: 'La automatización libera al equipo financiero de tareas repetitivas y les permite enfocarse en el análisis estratégico para el crecimiento del negocio.',
       icon: 'FaLightbulb',
       color: 'text-blue-600'
     },
@@ -49,23 +49,23 @@ const CaracterisiticasApp = () => {
 
   const getIcon = (iconName: string, color: string) => {
     switch (iconName) {
-      case 'FaChartLine': return <FaChartLine className={`text-3xl ${color}`} />;
-      case 'FaShieldAlt': return <FaShieldAlt className={`text-3xl ${color}`} />;
-      case 'FaLightbulb': return <FaLightbulb className={`text-3xl ${color}`} />;
-      case 'FaUserTie': return <FaUserTie className={`text-3xl ${color}`} />;
-      case 'FaChartBar': return <FaChartBar className={`text-3xl ${color}`} />;
-      default: return <FaChartLine className={`text-3xl ${color}`} />;
+      case 'FaChartLine': return <FaChartLine className={`text-7xl ${color}`} />;
+      case 'FaShieldAlt': return <FaShieldAlt className={`text-7xl ${color}`} />;
+      case 'FaLightbulb': return <FaLightbulb className={`text-7xl ${color}`} />;
+      case 'FaUserTie': return <FaUserTie className={`text-7xl ${color}`} />;
+      case 'FaChartBar': return <FaChartBar className={`text-7xl ${color}`} />;
+      default: return <FaChartLine className={`text-7xl ${color}`} />;
     }
   };
 
   return (
-    <section id="caracteristicas" className="py-20 bg-white">
+    <section id="caracteristicas" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 transition-transform duration-300 ease-in-out hover:scale-105">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 transition-transform duration-300 ease-in-out hover:scale-105 dark:text-white">
             La Tranquilidad de un Banco, la Agilidad de una Fintech
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
             Descubre cómo la Solución de Consulbank Aumenta la Rentabilidad de tu Empresa.
           </p>
         </div>
@@ -74,17 +74,17 @@ const CaracterisiticasApp = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.id}
-              className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group transform hover:scale-105"
+              className="bg-gray-50 rounded-xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 group transform hover:scale-105 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="mb-4">
                 {getIcon(feature.icon, feature.color)}
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 dark:text-white">
                 {feature.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed dark:text-gray-300">
                 {feature.description}
               </p>
             </div>
